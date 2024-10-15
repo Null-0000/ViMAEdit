@@ -1,0 +1,9 @@
+pandas
+numpy
+matplotlib
+torch==2.3.0
+torchvision==0.18.0
+torchmetrics==1.4.0.post0
+diffusers==0.27.2
+transformers==4.41.1
+xformers==0.0.26.post1
