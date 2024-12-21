@@ -1,7 +1,6 @@
 # ViMAEdit: vision-guided and mask-enhanced adaptive editing algorithm for prompt-based image editing
-![](images/clip_vs_lpips.png)
-## Performance
-Performance on PIE-Bench
+![](clip_vs_lpips.png)
+## Performance on PIE-Bench
 | Method | Structure Distance | PSNR | LPIPS | MSE | SSIM | CLIP-Whole | CLIP-Edited |
 |-------|-------|-------|-------|-------|-------|-------|-------|
 | P2P-Zero | 51.13 | 21.23 | 143.87 | 135.00 | 77.23 | 23.36 | 21.03 |
