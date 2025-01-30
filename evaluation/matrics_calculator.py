@@ -271,9 +271,7 @@ class LossG(torch.nn.Module):
 class MetricsCalculator:
     def __init__(self, device) -> None:
         self.device=device
-        clip_path = '/defaultShare/fashionvil_data/pretrained_models/openai/clip-vit-large-patch14'
-        self.clip_metric_calculator = CLIPScore(model_name_or_path=clip_path).to(device)
-        # self.clip_metric_calculator = CLIPScore(model_name_or_path="openai/clip-vit-large-patch14").to(device)
+        self.clip_metric_calculator = CLIPScore(model_name_or_path="openai/clip-vit-large-patch14").to(device)
         self.psnr_metric_calculator = PeakSignalNoiseRatio(data_range=1.0).to(device)
         self.lpips_metric_calculator = LearnedPerceptualImagePatchSimilarity(net_type='squeeze').to(device)
         self.mse_metric_calculator = MeanSquaredError().to(device)
